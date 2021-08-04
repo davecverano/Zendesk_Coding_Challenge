@@ -46,7 +46,7 @@ def main():
                             if not page_input.isdigit():
                                 print('Input must be a positive integer')
                             elif int(page_input) > num_pages or int(page_input) < 1:
-                                print('Input must between 1 and ' + num_pages)
+                                print('Input must between 1 and ' + str(num_pages))
                             else:
                                 page_input = int(page_input)
                                 break
