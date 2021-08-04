@@ -24,7 +24,7 @@ Install and update requirements:
 pip install --upgrade pip Zendesk
 ```
 
-To run the program from the zendesk_challenge folder:
+To run the program from the zendesk_coding_challenge folder:
 ```shell
 python main.py
 ```
