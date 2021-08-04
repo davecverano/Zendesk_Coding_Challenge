@@ -34,7 +34,24 @@ def main():
                 user_input = input()
 
                 if user_input == '1':
-                    for ticket in get_var('tickets', ticket_list)[1:9]:
+                    num_tickets = len(get_var('tickets', ticket_list))
+                    num_pages = int(num_tickets/25)
+                    page_input = 1
+                    if num_pages > 0:
+
+                        while True:
+                            print('There are {num_pages} pages '.format(num_pages=num_pages))
+                            print('Select a page: ')
+                            page_input = input()
+                            if not page_input.isdigit():
+                                print('Input must be a positive integer')
+                            elif int(page_input) > num_pages or int(page_input) < 1:
+                                print('Input must between 1 and ' + num_pages)
+                            else:
+                                page_input = int(page_input)
+                                break
+                    page_ticket_list = get_var('tickets', ticket_list)[(page_input-1)*25:page_input*25]
+                    for ticket in page_ticket_list:
                         print("Ticket with subject \'{subject}\' created on {date}".format(subject=get_var('subject', ticket),date=get_var('created_at', ticket)))
                 elif user_input == '2':
                     if get_var('tickets', ticket_list):
