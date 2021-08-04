@@ -16,7 +16,7 @@ Writing a CLI to display data from zendesk
 ### Setting up the development environment:
 Grab the source:
 ```shell
-git clone git@github.com:davecverano/zendesk_coding_challenge.git
+git clone https://github.com/davecverano/zendesk_coding_challenge.git
 ```
 
 Install and update requirements:
