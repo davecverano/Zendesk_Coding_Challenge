@@ -1,8 +1,13 @@
 # Zendesk Challenge
+Edit: This project does not currently work due to expired credentials
+
+### Finished Project Demo
+
+![Zendesk_demo](https://user-images.githubusercontent.com/49330823/180491231-53d69f0b-01ac-45ab-b6cf-cbee2f27641b.JPG)
 
 ### Intro
 
-The goal of this task is to pull api data from zendesk
+The goal of this task is to pull api data from zendesk. Features error checking and unit tests
 
 ### Tools
 
